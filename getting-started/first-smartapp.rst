@@ -268,7 +268,7 @@ In our ``updated()`` method, notice that the first thing we do (aside from some 
 
 Also, note that both ``installed()`` and ``updated()`` call a method named ``initialize()``. Since both ``installed()`` and ``upated()`` typically both create subscriptions or schedules, we can reduce code duplication by using a helper method.
 
-We also use the built-in logger (``log``) to log information. SmartThings does not currently have a debugger within the IDE, so use the ``log()`` method to log information that might be useful for debugging. The logs are available by clicking *Live Logging* at the top of the IDE.
+We also use the built-in logger (``log``) to log information. SmartThings does not currently have a debugger within the IDE, so use the ``log()`` method to log information that might be useful for debugging. The logs are available by clicking *Live Logging* at the top of the IDE (note: this only appears once a SmartApp has been installed).
 
 Finally, note that we reference a variable named ``settings`` in our log statement. Remember the preference inputs we defined? Every preference input gets stored in a read-only map called ``settings``. We can get the values of the various inputs by indexing into the ``settings`` map with the name of the input (e.g., ``settings.theswitch``).
 
